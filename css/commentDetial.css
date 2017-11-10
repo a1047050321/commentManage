@@ -1,0 +1,126 @@
+body {
+    overflow: hidden;
+}
+
+.commentInfo,
+.detialInfo {
+    margin: 5px auto;
+    text-align: left;
+    width: 94%;
+}
+
+.commentInfo tr,
+.detialInfo tr {
+    line-height: 30px;
+    height: 30px;
+    color: #505050;
+    font-size: 12px;
+    font-family: '宋体 微软雅黑'
+}
+
+.commentInfo input,
+.commentInfo textarea,
+.detialInfo input {
+    border: 1px solid #BBBBBB;
+    outline: none;
+    outline-offset: 0;
+    width: 90%;
+    color: black;
+    background-color: #fff;
+}
+
+.commentInfo input,
+.detialInfo input {
+    text-indent: 4px;
+}
+
+.commentInfo textarea,
+{
+    width: 100%;
+}
+
+.commentInfo textarea {
+    padding-top: 4px;
+    min-height: 65px;
+    resize: none;
+    margin-top: 4px;
+    padding-left: 4px;
+}
+
+.commentInfo input,
+.detialInfo input {
+    height: 20px;
+}
+
+.commentInfo input:focus,
+.commentInfo select:focus,
+textarea:focus,
+.detialInfo input:focus {
+    border: 1px solid #4399FB;
+}
+
+.detial {
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.detial span {
+    padding-right: 12px;
+}
+
+.detial .open,
+.detial .close {
+    background: url("../img/detial_an.png") no-repeat;
+}
+
+.detial .open {
+    background-position: right 2px;
+    color: #008fd0;
+}
+
+.detial .close {
+    background-position: right -10px;
+    color: #505050;
+}
+
+table td {
+    white-space: nowrap;
+}
+
+table {
+    table-layout: fixed;
+}
+
+.forbidInfo {
+    margin: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #F0F0F0;
+    color: #505050;
+    font-size: 12px;
+    font-family: '宋体 微软雅黑'
+}
+
+.forbidInfo dl {
+    float: left;
+    width: 50%;
+}
+
+.forbidInfo dd {
+    padding: 20px 0 0 55px;
+}
+
+.contentWrap {
+    border: 1px solid #dcdcdc;
+    margin: 10px 10px 0 10px;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+div.listtitle {
+    position: fixed;
+    width: 92.5%;
+}
+#commentId-ifr{width:200px;}
+/* .contentWrap li {
+    text-align: center;
+} */

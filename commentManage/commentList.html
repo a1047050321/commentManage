@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>评论列表</title>
+    <link rel="stylesheet" type="text/css" href="../css/base_comment.css" />
+    <link rel="stylesheet" type="text/css" href="../css/comm_comment.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/pages/tpager.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../plugins/pages/pages.css" /> -->
+</head>
+
+<body>
+    <div class="commentList clearfix">
+        <div class="tools toppart">
+            <a class="passBtn" href="javascript:void(0);"><span></span>通过</a>
+            <a class="forbidBtn" href="javascript:void(0);"><span></span>驳回</a>
+            <a class="detailBtn" href="javascript:void(0);"><span></span>详情</a>
+        </div>
+        <div class="mainContent">
+            <div class="conconent">
+                <div class="listtitle">
+                </div>
+                <div class="list tableList">
+                </div>
+            </div>
+        </div>
+        <ul class="selectBysensitiveword">
+            <li>
+                <input type="radio" name="sel" id="1pass">
+                <label for="1pass">通过</label>
+            </li>
+            <li>
+                <input type="radio" name="sel" id="2not_pass">
+                <label for="2not_pass">未通过</label>
+            </li>
+            <li>
+                <input type="radio" name="sel" id="0all">
+                <label for="0all">全部</label>
+            </li>
+        </ul>
+        <div class="hoverReactT" style="display: none">
+            <div class="hoverReactF">
+                <div class="hoverReact">
+                    <div class="commentHover"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pages">
+            <div class="pageBar"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery1.10.2.min.js"></script>
+    <script type="text/javascript" src="../plugins/pages/jquery.tpager.js"></script>
+    <!-- <script type="text/javascript" src="../plugins/pages/pages.js"></script> -->
+    <script type="text/javascript" src="../plugins/tlayer/jquery.tlayer.js"></script>
+    <script type="text/javascript" src="js/commentUtil.js"></script>
+    <script type="text/javascript" src="js/commList.js"></script>
+    <script type="text/javascript" src="js/commentList.js"></script>
+</body>
+
+</html>

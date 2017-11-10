@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>分页插件</title>
+    <link rel="stylesheet" type="text/css" href="pages.css" />
+    <script type="text/javascript" src="../../js/jquery1.10.2.min.js"></script>
+    <script type="text/javascript" src="pages.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var $pages = $(".pages").showPages({
+            url: "http://dtv.homed.me/recommend/release/get_history_list?accesstoken=TOKEN4002",
+            pagesIndex: 'pageidx',
+            pagesNumber: 'pagenum',
+            currentPage: 1,
+            pageSize: 2,
+            inputVale: "",
+            numberSize: 10,
+            success: function(data, pagsIndex) {
+                console.log(data);
+            },
+            error: function(xmlhttp, error, pagsIndex) {
+                if (error == 'timeout') {
+                    console.log("服务器异常！");
+                } else if (error == 'error') {
+                    console.log("请求被取消");
+                }
+            }
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="pages pageBar"></div>
+</body>
+
+</html>

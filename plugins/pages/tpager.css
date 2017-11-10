@@ -1,0 +1,58 @@
+/**
+ * 分页导航样式
+ */
+.tpage-nav {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 12px;
+}
+
+.tpage-nav span, .tpage-nav a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 29px;
+    font-size: 12px;
+    color: #000;
+    padding: 0 12px;
+    line-height: 29px;
+    margin-left: 2px;
+    text-decoration: none;
+}
+
+.tpage-nav a {
+    cursor: pointer;
+}
+
+.tpage-nav a:hover,
+.tpage-nav span.current {
+    background-color: #2F6FAC;
+    color: #FFF;
+}
+
+.tpage-nav span {
+    color: #969696;
+}
+
+.tpage-nav input, .tpage-nav select {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #B0B0B0;
+    margin-left: 5px;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.tpage-nav input {
+    width: 33px;
+}
+
+.tpage-nav select {
+    margin-left: 20px;
+}
+
+.tpage-nav em {
+    font-style: normal;
+}

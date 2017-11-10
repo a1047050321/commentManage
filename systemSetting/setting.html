@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+
+
+<head>
+
+    <title>设置</title>
+
+    <meta http-equiv="description" content="this is my page">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/comm_comment.css">
+
+    <link rel="stylesheet" type="text/css" href="../plugins/tlayer/tlayer.css">
+
+    <link rel="stylesheet" type="text/css" href="css/setting.css">
+
+</head>
+
+
+
+<body style="overflow: auto;">
+
+    <div class="location"><span>当前位置：系统设置</span></div>
+
+    <div class='setupBlock clearfix'>
+
+        <div class='title'>
+
+            <div>评论保留时长</div>
+
+        </div>
+
+        <div class='content'>
+
+            <ul>
+
+                <li onselectstart='return false;'>&ensp;&ensp;审核通过&ensp;&ensp;
+
+                    <input type="number" id="34001" min="0" max="365" value="360" />&ensp;天</li>
+
+                <li onselectstart='return false;'>&ensp;&ensp;&ensp;&ensp;未通过&ensp;&ensp;
+
+                    <input type="number" id="34002" min="0" max="30" value="20" />&ensp;天</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+<!--     <div class='setupBlock clearfix'>
+
+        <div class='title'>
+
+            <div>评论保留上限</div>
+
+        </div>
+
+        <div class='contents'>
+
+            <ul>
+
+                <li onselectstart='return false;'>&ensp;&ensp;评论保留最大上限&ensp;&ensp;
+
+                    <input type="number" id="34003" min="0" max="10" value="8" />&ensp;条</li>
+
+            </ul>
+
+        </div>
+
+    </div> -->
+
+    <div class='setupBlock clearfix'>
+
+        <div class='title'>
+
+            <div>用户消息列表</div>
+
+        </div>
+
+        <div class='contents'>
+
+            <ul>
+
+                <li onselectstart='return false;'>&ensp;&ensp;用户消息列表最大长度配置&ensp;&ensp;
+
+                    <input type="number" id="34004" min="0" max="10" value="8" />&ensp;条</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class='setupBlock clearfix'>
+
+        <div class='title'>
+
+            <div>人工审核设置</div>
+
+        </div>
+
+        <div class='contents'>
+
+            <ul>
+
+                <li onselectstart='return false;'>
+
+                    &ensp;&ensp;评论是否需要人工审核
+
+                </li>
+
+                <li>
+
+                    <a class="buttonBtn btnActive" href="javascript:void(0);" id="34007"><span></span></a>
+
+                </li>
+
+            </ul>
+            
+            <ul>
+
+                <li onselectstart='return false;'>
+
+                    &ensp;&ensp;手机直播弹幕是否需要人工审核
+
+                </li>
+
+                <li>
+
+                    <a class="buttonBtn" href="javascript:void(0);" id="34008"><span></span></a>
+
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div class='setupBlock clearfix' id="autoCheck">
+
+        <div class='title'>
+
+            <div>敏感词自动审核设置</div>
+
+        </div>
+
+        <div class='contents'>
+
+            <ul  class="clearfix">
+
+                <li onselectstart='return false;'>
+
+                    &ensp;&ensp;审核未通过是否需要人工审核
+
+                </li>
+
+                <li>
+
+                    <a class="buttonBtn btnActive" href="javascript:void(0);" id="34005"><span></span></a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <br><br><br>
+
+        <p >开启，则无论敏感词审核是否通过，都需要人工审核；关闭，则敏感词审核未通过，直接被驳回，敏感词审核通过了，需要人工审核</p>
+
+    </div>
+
+    <div class='setupBlock clearfix'>
+
+        <div class='title'>
+
+            <div>节目评论开关</div>
+
+        </div>
+
+        <div class='contents'>
+
+            <ul>
+
+                <li onselectstart='return false;'>
+
+                    &ensp;&ensp;节目评论开关
+
+                </li>
+
+                <li>
+
+                    <a class="buttonBtn btnActive" href="javascript:void(0);" id="34006"><span></span></a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+
+</html>
+
+<script type="text/javascript" src="../js/jquery1.10.2.min.js"></script>
+
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="../js/apiConfig.js"></script>
+
+<script type="text/javascript" src="../js/base_comment.js"></script>
+
+<script type="text/javascript" src="../js/comm_comment.js"></script>
+
+<script type="text/javascript" src="../plugins/tlayer/jquery.tlayer.js"></script>
+
+<script type="text/javascript" src="js/setting.js"></script>
+

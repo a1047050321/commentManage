@@ -1,0 +1,266 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+
+/* IE下a会出现边框的情况 */
+
+a {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
+/* 高版本IE会在input框后面出现“X” */
+
+input::-ms-clear {
+    display: none;
+}
+
+
+/* 高版本IE默认会对文本域加上滚动条 */
+
+textarea {
+    overflow: auto;
+}
+
+table,
+td,
+tr {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+fieldset,
+img {
+    border: none;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+
+/*清除浮动-------------begin */
+
+.clearfix:after {
+    font-size: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: '.';
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* FOR IE6 */
+
+
+/*清除浮动-------------end */
+
+
+/*中间内容*/
+
+#basicInformation {
+    clear: both;
+    width: 100%;
+}
+
+#positionTips {
+    min-height: 25px;
+    max-height: 25px;
+    background-color: #3e6c99;
+    font-size: 12px;
+    color: #9fbbd7;
+    padding-left: 40px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    line-height: 25px;
+}
+
+#content {
+    float: left;
+}
+
+
+/* ----------二级菜单---------------beign */
+
+#secondNva {
+    width: 240px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #DCDCDC;
+    float: left;
+}
+
+#secondNva ul {
+    width: 100%;
+}
+
+#secondNva ul li.child:hover,
+#secondNva ul li>span:hover {
+    background-color: #DDDDDD;
+    color: black;
+}
+
+#secondNva ul li a {
+    color: black;
+    display: block;
+    margin-left: 52px;
+}
+
+#secondNva ul li>span {
+    color: black;
+    display: block;
+}
+
+#secondNva ul li {
+    border-top: #dcdcdc 1px solid;
+    height: 34px;
+    line-height: 34px;
+}
+
+#secondNva li ul li {
+    border: none;
+}
+
+#secondNva li ul li:first-child {
+    border-top: #dcdcdc 1px solid;
+}
+
+.secondMenuFocus {
+    background-color: #cbe3ef;
+    color: black;
+    font-weight: bolder;
+}
+
+
+/* ----------二级菜单----------------end */
+
+
+/* --------------重写checkbox---------begin */
+
+input[type=checkbox] {
+    opacity: 0;
+    display: none;
+    font-size: 0;
+}
+
+input[type=checkbox]+label {
+    display: inline-block;
+    height: 16px;
+    position: relative;
+}
+
+input[type=checkbox]+label:before {
+    content: '';
+    display: inline-block;
+    background: url('../images/checkbox.png') no-repeat 0 0;
+    height: 16px;
+    width: 17px;
+    outline: none;
+    border: none;
+    margin-right: 4px;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+input:checked+label:before {
+    content: '';
+    display: inline-block;
+    background: url('../images/checkbox.png') no-repeat 0 -16px;
+    height: 16px;
+    width: 17px;
+    outline: none;
+    border: none;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+
+/* --------------重写checkbox---------end */
+
+input,
+select {
+    padding: 2px;
+}
+
+input,
+select {
+    border: 1px solid #BBBBBB;
+    outline: none;
+    outline-offset: 0;
+}
+
+input:focus,
+select:focus {
+    border: 1px solid #4399FB;
+}
+
+;

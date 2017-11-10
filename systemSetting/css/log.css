@@ -1,0 +1,383 @@
+/* ----------工具栏------------------begin */
+
+.toolsBar {
+    height: 33px;
+    width: 100%;
+    border-bottom: #dcdcdc 1px solid;
+    vertical-align: middle;
+    color: #323232;
+    font-size: 12px;
+}
+
+.toolsBar .toolList {
+    height: inherit;
+    margin-left: 10px;
+    float: left;
+}
+
+.toolList li {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.toolList a {
+    color: #969696;
+}
+
+.submitBtn {
+    cursor: pointer;
+}
+
+.submitBtn span,
+.checkout span {
+    background-image: url(toolsBar.png);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 14px;
+    margin-top: 10px;
+    margin-right: 2px;
+    display: block;
+    float: left;
+}
+
+.submitBtn span,
+.checkout span {
+    background-position: -60px -40px;
+}
+
+.btnActive a {
+    color: black;
+}
+
+.btnActive:hover {
+    background-color: #2f6fac;
+}
+
+.btnActive:hover a {
+    color: white;
+}
+
+.btnActive.submitBtn span {
+    background-position: -60px 0px;
+}
+
+.btnActive.checkout span {
+    background-position: -60px 0px;
+}
+
+.btnActive.submitBtn:hover span {
+    background-position: -60px -20px;
+}
+
+.btnActive.checkout:hover span {
+    background-position: -60px -20px;
+}
+
+
+/* ----------工具栏------------------end */
+
+
+/* 按钮不可选的状态 */
+
+.disableFocus {
+    color: #969696;
+    background: white;
+}
+
+
+/* -------------dataTable-------------begin */
+
+.tableData thead>tr {
+    background-color: #fafafa;
+}
+
+.tableData {
+    text-align: left;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+    font-family: "宋体";
+}
+
+.tableData th {
+    font-size: 12px;
+    color: #646464;
+    font-weight: lighter;
+    padding-left: 10px;
+    text-align: left;
+    height: 34px
+}
+
+.tableData tr {
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    border-left: none;
+}
+
+.tableData tbody tr:hover {
+    background: #F1FBFF;
+}
+
+.tableData a {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.tableData td {
+    font-size: 12px;
+    padding-left: 10px
+}
+
+.tableData td,
+.tableData th,
+.tableData tr {
+    margin: 0px;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 30px;
+    padding-bottom: 0;
+    padding-top: 0;
+    white-space-collapse: collapse
+}
+
+.tableData a:hover {
+    background-color: #2f6fac;
+    cursor: pointer;
+}
+
+.tableData a>span {
+    float: none;
+    margin: 0 auto;
+    display: inline-block;
+    background-image: url(toolsBar.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+}
+
+
+/* -------------dataTable-------------end */
+
+
+/* ----------------普通按钮-----------begin */
+
+.btn {
+    font-size: 14px;
+    width: 90px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #565656;
+    font-weight: bolder;
+}
+
+.btnFocus,
+.btn:hover {
+    color: white;
+    background-color: #2F6FAC;
+}
+
+
+/* ----------------普通按钮-----------end */
+
+
+/*IE9不支持placeholder，故自定义属性*/
+
+.placeholder {
+    font-size: 14px;
+    color: #A9A9A9!important;
+}
+
+
+/* 包含分页插件的div */
+
+.pages {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*-页面分为pages，toolsbar和mainContent时，mainContent的样式----begin*/
+
+.mainContent {
+    overflow: hidden;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.mainContent>div {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    position: relative;
+}
+
+
+/*-页面分为pages，toolsbar和mainContent时，mainContent的样式----end*/
+
+
+/*---------表格中的排序小三角样式------begin*/
+
+.sortable {
+    cursor: pointer;
+    position: relative;
+}
+
+.sortable:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url('../plugins/datePicker/dropDown.png') no-repeat 0 0;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+
+
+/*---------表格中的排序小三角样式------end*/
+
+
+/*--------文件长度超出时显示为...------begin*/
+
+.nameEllipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/*--------文件长度超出时显示为...------end*/
+
+.tableContainer {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.searchContainer {
+    margin-right: 40px;
+    height: 120px;
+    margin-left: 10px;
+}
+
+.searchContainer>fieldset {
+    height: 90%;
+    border: 1px solid #DCDCDC;
+    position: relative;
+}
+
+.searchContainer legend {
+    line-height: 30px;
+    margin-left: 20px;
+    font-family: '宋体 微软雅黑';
+    font-size: 12px;
+    color: #505050;
+    font-weight: bold;
+}
+
+.buttons {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #f5f5f5;
+    display: block;
+    height: 30px;
+}
+
+.buttons>input {
+    margin-left: 20px;
+}
+
+.searchValue {
+    font-family: '宋体 微软雅黑';
+    font-size: 12px;
+    color: #505050;
+    display: inline-block;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.searchValue>input {
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+
+/*.searchValue span{display: inline-block;width: 4px;height: 1px;position: relative;vertical-align: middle;background: #505050;right: 1px;top: -2px;}*/
+
+input#keyword {
+    width: 235px;
+    text-indent: 5px;
+}
+
+input#username,
+input#startTime,
+input#endTime {
+    width: 100px;
+    text-indent: 5px;
+}
+
+input#startTime {
+    margin-right: 0px;
+}
+
+input#endTime {
+    margin-left: 0px;
+}
+
+.searchContainer input[type=text] {
+    border: none;
+    outline: 1px solid #DCDCDC;
+    outline-offset: 0px;
+    height: 25px;
+}
+
+.searchContainer input[type=text]:focus {
+    outline: 1px solid #2f6fac;
+}
+
+
+/*------------显示日历--------------begin*/
+
+.pickercontainer {
+    width: 101px;
+    height: 25px;
+    display: inline-block;
+}
+
+.pickercontainer:after {
+    content: url(../plugins/datePicker/dropDown.png);
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    width: 3px;
+    height: 3px;
+    margin-top: -14px;
+    margin-left: 90;
+}
+
+.pickercontainer>div {
+    width: 215px;
+    height: 188px;
+    position: absolute;
+    top: auto!important;
+    left: auto!important;
+    z-index: 5;
+    outline: 1px solid #969696;
+    background: white;
+}
+
+
+/*------------显示日历--------------end*/

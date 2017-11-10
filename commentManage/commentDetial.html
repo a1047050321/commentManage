@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>评论详情</title>
+    <link rel="stylesheet" type="text/css" href="../css/base_comment.css" />
+    <link rel="stylesheet" type="text/css" href="../css/comm_comment.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../plugins/pages/pages.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../css/commentDetial.css">
+</head>
+
+<body>
+    <table class="commentInfo clearfix">
+        <col width="15%" />
+        <col width="35%" />
+        <col width="15%" />
+        <col width="35%" />
+        <tr>
+            <td>评&ensp;论&ensp;id:</td>
+            <td>
+                <input id="commentId-ifr" type='text' class="nameEllipsis">
+            </td>
+        </tr>
+        <tr>
+            <td>评论内容</td>
+            <td colspan="3">
+                <textarea id="commentContent"></textarea>
+            </td>
+        </tr>
+    </table>
+    <div id="detials" class="detials clearfix">
+        <div id="detial" class="detial">
+            <span></span>
+        </div>
+        <table class="detialInfo clearfix">
+            <!--  <col width="15%" />
+            <col width="15%" />
+            <col width="15%" />
+            <col width="20%" />
+            <col width="15%" />
+            <col width="20%" />
+            <tr>
+                <td>用&ensp;户&ensp;id:</td>
+                <td>
+                    <input id="userId-ifr" type='text' class="nameEllipsis">
+                </td>
+                <td>用&ensp;户&ensp;名:</td>
+                <td>
+                    <input id="userName-ifr" type='text' class="nameEllipsis">
+                </td>
+                 <td>被赞次数:</td>
+                <td>
+                    <input id="good-ifr" type='text' class="nameEllipsis">
+                </td>
+            </tr>
+            <tr>
+                <td>用&ensp;户&ensp;id:</td>
+                <td>
+                    <input id="userId-ifr" type='text' class="nameEllipsis">
+                </td>
+                <td>用&ensp;户&ensp;名:</td>
+                <td>
+                    <input id="userName-ifr" type='text' class="nameEllipsis">
+                </td>
+                 <td>被赞次数:</td>
+                <td>
+                    <input id="good-ifr" type='text' class="nameEllipsis">
+                </td>
+            </tr>
+                 <tr>
+                <td>用&ensp;户&ensp;id:</td>
+                <td>
+                    <input id="userId-ifr" type='text' class="nameEllipsis">
+                </td>
+                <td>用&ensp;户&ensp;名:</td>
+                <td>
+                    <input id="userName-ifr" type='text' class="nameEllipsis">
+                </td>
+                 <td>被赞次数:</td>
+                <td>
+                    <input id="good-ifr" type='text' class="nameEllipsis">
+                </td>
+            </tr>
+            <tr>
+                <td>用&ensp;户&ensp;id:</td>
+                <td>
+                    <input id="userId-ifr" type='text' class="nameEllipsis">
+                </td>
+                <td>用&ensp;户&ensp;名:</td>
+                <td>
+                    <input id="userName-ifr" type='text' class="nameEllipsis">
+                </td>
+                 <td>被赞次数:</td>
+                <td>
+                    <input id="good-ifr" type='text' class="nameEllipsis">
+                </td>
+            </tr> -->
+        </table>
+        <div class="contentWrap">
+            <div class="content">
+                <div class="listtitle">
+                    <!--            <ul class="clearfix">
+                        <li style="width:40%">驳回原因</li>
+                        <li style="width:20%">严重等级</li>
+                        <li style="width:40%">操作时间</li>
+                    </ul> -->
+                </div>
+                <div class="list tableList" style="padding-top: 28px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="forbidInfo clearfix">
+        <dl class="severityLevel">
+            <dt>严重级别选择:</dt>
+            <dd>
+                <input type="radio" name="severity" id="1st" checked=true>
+                <label for="1st">1级</label>
+            </dd>
+            <dd>
+                <input type="radio" name="severity" id="2ed">
+                <label for="2ed">2级</label>
+            </dd>
+            <dd>
+                <input type="radio" name="severity" id="3th">
+                <label for="3th">3级</label>
+            </dd>
+        </dl>
+        <dl class="forbidReason">
+            <dt>驳回原因选择:</dt>
+            <dd>
+                <input type="radio" name="reason" id="11200re" checked=true>
+                <label for="11200re">蓄意辱骂他人</label>
+            </dd>
+            <dd>
+                <input type="radio" name="reason" id="11201re">
+                <label for="11201re">发表无关产品广告</label>
+            </dd>
+            <dd>
+                <input type="radio" name="reason" id="11202re">
+                <label for="11202re">发表不正当言论</label>
+            </dd>
+        </dl>
+    </div>
+    <script type="text/javascript" src="../js/jquery1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/commentUtil.js"></script>
+    <script type="text/javascript" src="js/commentDetial.js"></script>
+</body>
+
+</html>

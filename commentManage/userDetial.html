@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>用户</title>
+    <link rel="stylesheet" type="text/css" href="../css/base_comment.css" />
+    <link rel="stylesheet" type="text/css" href="../css/comm_comment.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../plugins/pages/pages.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../css/commentDetial.css">
+</head>
+
+<body>
+    <table class="commentInfo clearfix userInfo">
+        <col width="15%" />
+        <col width="35%" />
+        <col width="15%" />
+        <col width="35%" />
+        <tr>
+            <td>用&ensp;户&ensp;id:</td>
+            <td>
+                <input id="userId-ifr" type='text' class="nameEllipsis">
+            </td>
+            <td>用&ensp;户&ensp;名:</td>
+            <td>
+                <input id="userName-ifr" type='text' class="nameEllipsis">
+            </td>
+        </tr>
+        <tr>
+            <td>状&ensp;&ensp;&ensp;&ensp;态:</td>
+            <td>
+                <input id="status-ifr" type='text' class="nameEllipsis">
+            </td>
+            <td>被禁总数:</td>
+            <td>
+                <input id="forbidNum-ifr" type='text' class="nameEllipsis">
+            </td>
+        </tr>
+    </table>
+    <table class="commentInfo clearfix editorInfo">
+        <col width="15%" />
+        <col width="35%" />
+        <col width="15%" />
+        <col width="35%" />
+        <tr>
+            <td>操&ensp;作&ensp;人:</td>
+            <td>
+                <input id="eidtor-ifr" type='text' class="nameEllipsis">
+            </td>
+            <td>操作时间:</td>
+            <td>
+                <input id="eidtorTime-ifr" type='text' class="nameEllipsis">
+            </td>
+        </tr>
+        <tr>
+            <td>失效时间:</td>
+            <td>
+                <input id="time-ifr" type='text' class="nameEllipsis">
+            </td>
+        </tr>
+    </table>
+    <div id="detials" class="detials clearfix">
+        <div class="contentWrap">
+            <div class="content">
+                <div class="listtitle">
+                    <!--            <ul class="clearfix">
+                        <li style="width:40%">驳回原因</li>
+                        <li style="width:20%">严重等级</li>
+                        <li style="width:40%">操作时间</li>
+                    </ul> -->
+                </div>
+                <div class="list tableList" style="padding-top: 28px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/commentUtil.js"></script>
+    <script type="text/javascript" src="js/userDetial.js"></script>
+</body>
+
+</html>
